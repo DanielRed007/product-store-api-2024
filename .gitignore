@@ -1,52 +1,38 @@
-# Prerequisites
-*.d
+# Ignore build outputs
+app/bin/
+app/obj/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# User-specific files
+app/*.user
+app/*.rsuser
+app/*.suo
+app/*.userosscache
+app/*.sln.docstates
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Rider/JetBrains specific files
+app/.idea/
+app/*.sln.iml
 
-# Precompiled Headers
-*.gch
-*.pch
+# Visual Studio Code specific files
+app/.vscode/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Backup files
+app/*.bak
+app/*.swp
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Logs
+app/*.log
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# NuGet packages
+app/*.nupkg
+app/*.snupkg
+app/.nuget/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Dotnet Core SDK specific files
+app/project.lock.json
+app/project.fragment.lock.json
+app/artifacts/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Coverage reports
+app/coverage/
+app/*.

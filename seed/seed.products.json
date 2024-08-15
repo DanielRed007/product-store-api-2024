@@ -1,0 +1,72 @@
+[
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a01" },
+        "Name": "Wireless Keyboard",
+        "Description": "A wireless keyboard with backlit keys and ergonomic design.",
+        "Price": 49.99,
+        "StockQuantity": 75
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a02" },
+        "Name": "Bluetooth Headphones",
+        "Description": "Noise-canceling Bluetooth headphones with long battery life.",
+        "Price": 89.99,
+        "StockQuantity": 120
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a03" },
+        "Name": "USB-C Monitor Stand",
+        "Description": "Adjustable monitor stand with USB-C hub and built-in charging.",
+        "Price": 79.99,
+        "StockQuantity": 30
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a04" },
+        "Name": "Ergonomic Office Chair",
+        "Description": "An ergonomic office chair with lumbar support and adjustable armrests.",
+        "Price": 199.99,
+        "StockQuantity": 50
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a05" },
+        "Name": "4K Webcam",
+        "Description": "High-definition 4K webcam with built-in microphone and auto-focus.",
+        "Price": 129.99,
+        "StockQuantity": 65
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a06" },
+        "Name": "Gaming Mouse",
+        "Description": "Precision gaming mouse with customizable DPI settings and RGB lighting.",
+        "Price": 59.99,
+        "StockQuantity": 90
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a07" },
+        "Name": "Smartphone Stand",
+        "Description": "Adjustable smartphone stand with 360-degree rotation and anti-slip base.",
+        "Price": 19.99,
+        "StockQuantity": 200
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a08" },
+        "Name": "Portable SSD 1TB",
+        "Description": "High-speed portable SSD with 1TB storage and rugged design.",
+        "Price": 149.99,
+        "StockQuantity": 40
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a09" },
+        "Name": "Desk Lamp with Wireless Charger",
+        "Description": "Modern desk lamp with built-in wireless charger and adjustable brightness.",
+        "Price": 39.99,
+        "StockQuantity": 85
+    },
+    {
+        "_id": { "$oid": "64e3dce1a99b7c4a274c6a0a" },
+        "Name": "Bluetooth Speaker",
+        "Description": "Portable Bluetooth speaker with deep bass and waterproof design.",
+        "Price": 69.99,
+        "StockQuantity": 110
+    }
+]

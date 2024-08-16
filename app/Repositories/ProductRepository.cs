@@ -18,10 +18,11 @@ namespace app.Repositories
 
         public async Task<IEnumerable<Product>> GetAllProductsAsync()
         {
-            return await _products.Find(product => true).ToListAsync();
+            var serializedProducts = await _products.Find(product => true).ToListAsync();
+            return serializedProducts;
         }
 
-        public async Task<Product> GetProductByIdAsync(ObjectId id)
+        public async Task<Product> GetProductByIdAsync(string id)
         {
             return await _products.Find(product => product.Id == id).FirstOrDefaultAsync();
         }
@@ -36,7 +37,7 @@ namespace app.Repositories
             await _products.ReplaceOneAsync(p => p.Id == product.Id, product);
         }
 
-        public async Task DeleteProductAsync(ObjectId id)
+        public async Task DeleteProductAsync(string id)
         {
             await _products.DeleteOneAsync(product => product.Id == id);
         }

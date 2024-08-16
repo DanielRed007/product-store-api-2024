@@ -29,7 +29,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<Product> Get(ObjectId id)
+    public async Task<Product> Get(string id)
     {
         return await _productRepository.GetProductByIdAsync(id);
     }
@@ -41,14 +41,14 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task Put(ObjectId id, [FromBody] Product product)
+    public async Task Put(string id, [FromBody] Product product)
     {
         product.Id = id;
         await _productRepository.UpdateProductAsync(product);
     }
 
     [HttpDelete("{id}")]
-    public async Task Delete(ObjectId id)
+    public async Task Delete(string id)
     {
         await _productRepository.DeleteProductAsync(id);
     }

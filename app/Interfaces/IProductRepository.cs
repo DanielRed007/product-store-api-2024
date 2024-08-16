@@ -6,9 +6,9 @@ namespace app.Interfaces
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetAllProductsAsync();
-        Task<Product> GetProductByIdAsync(ObjectId id);
+        Task<Product> GetProductByIdAsync(string id);
         Task AddProductAsync(Product product);
         Task UpdateProductAsync(Product product);
-        Task DeleteProductAsync(ObjectId id);
+        Task DeleteProductAsync(string id);
     }
 }

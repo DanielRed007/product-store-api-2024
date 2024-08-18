@@ -4,6 +4,7 @@ using app.Interfaces;
 using MongoDB.Bson;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using app.Dto;
 
 namespace app.Controllers;
 
@@ -35,8 +36,18 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task Post([FromBody] Product product)
+    public async Task Post([FromBody] CreateProductDto productDto)
     {
+
+        var product = new Product
+        {
+            Id = ObjectId.GenerateNewId().ToString(),
+            Name = productDto.Name,
+            Description = productDto.Description,
+            Price = productDto.Price,
+            StockQuantity = productDto.StockQuantity
+        };
+
         await _productRepository.AddProductAsync(product);
     }
 
